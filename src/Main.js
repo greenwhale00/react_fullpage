@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import ReactFullpage from '@fullpage/react-fullpage';
 import './Main.scss';
 import { profile, portfolio } from './Data';
+import Main_cover from './Main_cover';
 
 //portfolio배열에서 title을 빼서 배열을 만들어 쓰겠다.
 const AC = portfolio.map(it => it = it.title);
@@ -20,6 +21,7 @@ const Cover = ({ on, setOn }) => {
     }, [])
     return (
         <div className={`Cover ${on ? "on" : ""}`} ref={cover}>
+
             <ul>
                 {
                     portfolio.map((it, idx) => {
@@ -47,6 +49,7 @@ const Main = () => {
             </button>
             <div className='num'>{portfolio[num - 1]?.title}</div>
             <nav className='gnb'>
+
                 <ul>
                     {
                         portfolio.map((it, idx) => {
@@ -70,7 +73,9 @@ const Main = () => {
                     return (
                         <ReactFullpage.Wrapper>
                             <div className="section">
-                                <div className='case'>Section 1 {profile.name}</div>
+                                <div className='case'>
+                                    <Main_cover />
+                                </div>
                             </div>
                             {
                                 portfolio.map((it, idx) => {
@@ -115,7 +120,7 @@ const Main = () => {
                                 })
                             }
                             <div className="section">
-                                <div className='case'>Section 1 (welcome to fullpage.js)</div>
+                                <div className='case'>last</div>
                             </div>
                         </ReactFullpage.Wrapper>
                     );

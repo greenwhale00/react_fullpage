@@ -16,12 +16,15 @@ const Main_cover = () => {
 
     return (
         <div>
+
             <section className='front'>
-
+                <div className="circle"></div>
                 <div className="tit">
+                    <div className="text">
+                        <p className='first'>Kim Hye Lim's</p>
+                        <p className='second'>PORTFOLIO</p>
+                    </div>
 
-                    <p className='first'>Meet your Next</p>
-                    <p className='second'><span>Creative</span> Developer.</p>
                 </div>
                 {/* <div className="circle">
                     <span>dot</span>

@@ -20,12 +20,12 @@ const Main_cover = () => {
 
                 <div className="tit">
 
-                    <p className='first'>Portfolio</p>
-                    <p className='second'>Kim Hye Lim</p>
+                    <p className='first'>Meet your Next</p>
+                    <p className='second'><span>Creative</span> Developer.</p>
                 </div>
-                <div className="circle">
+                {/* <div className="circle">
                     <span>dot</span>
-                </div>
+                </div> */}
 
 
             </section >

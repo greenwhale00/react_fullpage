@@ -15,10 +15,24 @@ const Main_cover = () => {
 
 
     return (
-        <section>
-            <div data-aos='fade-right' ><p className='tit'>Portfolio</p></div>
-            <div data-aos='fade-left' ><p className='tit'>Front End</p></div>
-        </section >
+        <div>
+            <section className='front'>
+
+                <div className="tit">
+
+                    <p className='first'>Portfolio</p>
+                    <p className='second'>Kim Hye Lim</p>
+                </div>
+                <div className="circle">
+                    <span>dot</span>
+                </div>
+
+
+            </section >
+
+        </div>
+
+
 
     )
 }

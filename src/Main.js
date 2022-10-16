@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import ReactFullpage from '@fullpage/react-fullpage';
-import './Main.scss';
+import './main.scss';
 import { profile, portfolio } from './Data';
 import Main_cover from './Main_cover';
 

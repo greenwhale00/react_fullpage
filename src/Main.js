@@ -21,18 +21,21 @@ const Cover = ({ on, setOn }) => {
     }, [])
     return (
         <div className={`Cover ${on ? "on" : ""}`} ref={cover}>
+            <div className='inside'>
+                <div className='des'>2022 Web Coding + Design Portfolio</div>
+                <ul>
+                    {
+                        portfolio.map((it, idx) => {
+                            return (
+                                <li key={idx} onClick={() => setOn(!on)}>
+                                    <a href={`#${it.title}`}>{it.title}</a>
+                                </li>
+                            )
+                        })
+                    }
+                </ul>
+            </div>
 
-            <ul>
-                {
-                    portfolio.map((it, idx) => {
-                        return (
-                            <li key={idx} onClick={() => setOn(!on)}>
-                                <a href={`#${it.title}`}>{it.title}</a>
-                            </li>
-                        )
-                    })
-                }
-            </ul>
 
         </div>
     )
